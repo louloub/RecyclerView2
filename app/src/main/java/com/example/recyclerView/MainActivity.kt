@@ -1,7 +1,6 @@
 package com.example.recyclerView
 
 import android.app.Activity
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,17 +18,9 @@ class MainActivity : Activity() {
         viewManager = LinearLayoutManager(this)
 
         val myDataset = arrayOf(
-                "test 1",
-                "test 2",
-                "test 3",
-                "test 4",
-                "test 5",
-                "test 6",
-                "test 7",
-                "test 8",
-                "test 9",
-                "test 10"
-        )
+                ObjectBonPlan("test 1","test 2"),
+                ObjectBonPlan("test 3","test 4")
+            )
         viewAdapter = MyAdapter(myDataset)
 
         recyclerView = findViewById<RecyclerView>(R.id.my_recycler_view).apply {

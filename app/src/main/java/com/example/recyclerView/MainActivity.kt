@@ -21,6 +21,7 @@ class MainActivity : Activity() {
                 ObjectBonPlan("test 1","test 2"),
                 ObjectBonPlan("test 3","test 4")
             )
+
         viewAdapter = MyAdapter(myDataset)
 
         recyclerView = findViewById<RecyclerView>(R.id.my_recycler_view).apply {

@@ -26,7 +26,7 @@ class MyAdapter(private val myDataset: Array<ObjectBonPlan>) :
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder.
     // Each data item is just a string in this case that is shown in a TextView.
-    class MyViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var tv : TextView = view.findViewById(R.id.my_text_view)
         var tv2 : TextView = view.findViewById(R.id.my_text_view2)
     }
